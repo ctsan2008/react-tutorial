@@ -12,7 +12,7 @@ function Stopwatch() {
       // every 10ms update the elapsed time
       intervalIdRef.current = setInterval(() => {
         setElapsedTime(Date.now() - startTimeRef.current);
-      }, 100);
+      }, 10);
 
       return () => {
         clearInterval(intervalIdRef.current);
